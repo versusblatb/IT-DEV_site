@@ -151,26 +151,32 @@ function handleFormSubmit(e) {
     const formMessage = document.getElementById('formMessage');
     
     // Получение данных формы
-    const formData = {
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        phone: document.getElementById('phone').value.trim(),
-        message: document.getElementById('message').value.trim(),
-        estimatedPrice: document.getElementById('estimatedPrice').value.trim()
-    };
+    const formData = new FormData(form);
+    formData.set('name', document.getElementById('name').value.trim());
+    formData.set('email', document.getElementById('email').value.trim());
+    formData.set('phone', document.getElementById('phone').value.trim());
+    formData.set('message', document.getElementById('message').value.trim());
+    formData.set('estimatedPrice', document.getElementById('estimatedPrice').value.trim());
     
     // Показ индикатора загрузки
     submitButton.classList.add('loading');
     formMessage.className = 'form-message';
     formMessage.style.display = 'none';
     
-    // Реальная отправка данных на сервер (PHP-скрипт send.php)
-    fetch('send.php', {
+    // Отправка данных на ваш сервер/worker, который шлёт в Telegram
+    // ЗАМЕНИТЕ URL НИЖЕ на адрес вашего Cloudflare Worker или другого бэкенда
+    fetch('https://itdev-form.kadieveldar07.workers.dev', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Content-Type': 'application/json'
         },
-        body: new URLSearchParams(formData).toString()
+        body: JSON.stringify({
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            message: formData.get('message'),
+            estimatedPrice: formData.get('estimatedPrice')
+        })
     })
     .then(response => response.json().catch(() => null).then(data => ({ ok: response.ok, status: response.status, data })))
     .then(result => {
