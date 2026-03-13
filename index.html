@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDEV | Создание Веб-Сайтов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-text">ITDEV</div>
+                    <div class="logo-line"></div>
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 30" width="40" height="30">
+                            <line x1="20" y1="0" x2="20" y2="15" stroke="currentColor" stroke-width="2"/>
+                            <line x1="20" y1="15" x2="5" y2="25" stroke="currentColor" stroke-width="2"/>
+                            <line x1="20" y1="15" x2="20" y2="25" stroke="currentColor" stroke-width="2"/>
+                            <line x1="20" y1="15" x2="35" y2="25" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="5" cy="25" r="3" fill="currentColor"/>
+                            <circle cx="20" cy="25" r="3" fill="currentColor"/>
+                            <circle cx="35" cy="25" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#statistics">Статистика</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#calculator">Калькулятор</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in">
+                <h1>Создаём Современные Веб-Сайты</h1>
+                <p class="subtitle">Профессиональная разработка с учётом всех ваших потребностей</p>
+                <a href="#calculator" class="cta-button">Рассчитать стоимость</a>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">О Нас</h2>
+            <div class="about-content">
+                <div class="about-card animate-slide-left">
+                    <div class="card-icon">🎨</div>
+                    <h3>Уникальный Дизайн</h3>
+                    <p>Создаём красивые и функциональные интерфейсы, которые привлекают внимание и повышают конверсию.</p>
+                </div>
+                <div class="about-card animate-slide-up">
+                    <div class="card-icon">⚡</div>
+                    <h3>Быстрая Работа</h3>
+                    <p>Оптимизированный код обеспечивает высокую скорость загрузки и отличную производительность.</p>
+                </div>
+                <div class="about-card animate-slide-right">
+                    <div class="card-icon">📱</div>
+                    <h3>Адаптивность</h3>
+                    <p>Ваш сайт будет идеально выглядеть на всех устройствах: компьютерах, планшетах и смартфонах.</p>
+                </div>
+                <div class="about-card animate-slide-up">
+                    <div class="card-icon">🔧</div>
+                    <h3>Поддержка</h3>
+                    <p>Обеспечиваем полную техническую поддержку и сопровождение вашего проекта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика достижений -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Наши Достижения</h2>
+            <p class="section-subtitle">Цифры, которые говорят сами за себя</p>
+            <div class="statistics-grid">
+                <div class="stat-card animate-fade-in">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Проектов выполнено</div>
+                </div>
+                <div class="stat-card animate-fade-in">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-card animate-fade-in">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Удовлетворённости</div>
+                </div>
+                <div class="stat-card animate-fade-in">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Отзывы Клиентов</h2>
+            <p class="section-subtitle">Что говорят о нас наши клиенты</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-slide-up">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">АИ</div>
+                        <div class="testimonial-info">
+                            <h3>Алексей Иванов</h3>
+                            <p class="testimonial-role">Директор компании "ТехноСервис"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Отличная работа! Сайт получился именно таким, как мы хотели. Профессиональный подход, соблюдение сроков и качественный результат. Рекомендую!"</p>
+                </div>
+                <div class="testimonial-card animate-slide-up">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">МП</div>
+                        <div class="testimonial-info">
+                            <h3>Мария Петрова</h3>
+                            <p class="testimonial-role">Владелец интернет-магазина</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Создали для нас современный интернет-магазин. Продажи выросли на 40%! Очень довольна результатом и поддержкой после запуска."</p>
+                </div>
+                <div class="testimonial-card animate-slide-up">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">ДС</div>
+                        <div class="testimonial-info">
+                            <h3>Дмитрий Сидоров</h3>
+                            <p class="testimonial-role">Предприниматель</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Быстро и качественно сделали лендинг для нашего продукта. Дизайн современный, сайт работает отлично на всех устройствах. Спасибо!"</p>
+                </div>
+                <div class="testimonial-card animate-slide-up">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">ЕК</div>
+                        <div class="testimonial-info">
+                            <h3>Елена Козлова</h3>
+                            <p class="testimonial-role">Маркетолог</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Профессиональная команда, которая понимает потребности бизнеса. Сайт не только красивый, но и функциональный. Конверсия увеличилась значительно!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Калькулятор Стоимости</h2>
+            <p class="section-subtitle">Выберите необходимые опции для расчёта стоимости вашего веб-сайта</p>
+            
+            <div class="calculator-wrapper">
+                <div class="calculator-options">
+                    <div class="option-group animate-fade-in">
+                        <h3>Тип Сайта</h3>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="siteType" value="landing" data-price="15000">
+                                <div class="card-content">
+                                    <span class="option-icon">📄</span>
+                                    <span class="option-name">Лендинг</span>
+                                    <span class="option-price">от 15 000 ₽</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="siteType" value="corporate" data-price="35000">
+                                <div class="card-content">
+                                    <span class="option-icon">🏢</span>
+                                    <span class="option-name">Корпоративный</span>
+                                    <span class="option-price">от 35 000 ₽</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="siteType" value="shop" data-price="50000">
+                                <div class="card-content">
+                                    <span class="option-icon">🛒</span>
+                                    <span class="option-name">Интернет-магазин</span>
+                                    <span class="option-price">от 50 000 ₽</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="siteType" value="custom" data-price="80000">
+                                <div class="card-content">
+                                    <span class="option-icon">🚀</span>
+                                    <span class="option-name">Индивидуальный</span>
+                                    <span class="option-price">от 80 000 ₽</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="option-group animate-fade-in">
+                        <h3>Дополнительные Опции</h3>
+                        <div class="options-list">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="design" data-price="10000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">Уникальный дизайн</span>
+                                <span class="option-price">+10 000 ₽</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="cms" data-price="15000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">Система управления (CMS)</span>
+                                <span class="option-price">+15 000 ₽</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="seo" data-price="12000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">SEO оптимизация</span>
+                                <span class="option-price">+12 000 ₽</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="mobile" data-price="8000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">Мобильная версия</span>
+                                <span class="option-price">+8 000 ₽</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="analytics" data-price="5000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">Аналитика и отчёты</span>
+                                <span class="option-price">+5 000 ₽</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="options" value="support" data-price="10000">
+                                <span class="checkmark"></span>
+                                <span class="option-text">Годовая поддержка</span>
+                                <span class="option-price">+10 000 ₽</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="option-group animate-fade-in">
+                        <h3>Сроки Разработки</h3>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="timeline" value="fast" data-multiplier="1.3">
+                                <div class="card-content">
+                                    <span class="option-icon">⚡</span>
+                                    <span class="option-name">Срочно (1-2 недели)</span>
+                                    <span class="option-price">+30%</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="timeline" value="normal" data-multiplier="1" checked>
+                                <div class="card-content">
+                                    <span class="option-icon">📅</span>
+                                    <span class="option-name">Обычно (3-4 недели)</span>
+                                    <span class="option-price">Базово</span>
+                                </div>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="timeline" value="extended" data-multiplier="0.9">
+                                <div class="card-content">
+                                    <span class="option-icon">⏰</span>
+                                    <span class="option-name">Расширенный (5+ недель)</span>
+                                    <span class="option-price">-10%</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-result animate-slide-in">
+                    <div class="result-card">
+                        <h3>Итоговая Стоимость</h3>
+                        <div class="result-price">
+                            <span class="price-value" id="totalPrice">0</span>
+                            <span class="currency">₽</span>
+                        </div>
+                        <div class="result-details" id="resultDetails"></div>
+                        <button class="result-button" onclick="scrollToContact()">Заказать Сайт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Часто Задаваемые Вопросы</h2>
+            <p class="section-subtitle">Ответы на популярные вопросы</p>
+            <div class="faq-container">
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Сколько времени занимает разработка сайта?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Сроки разработки зависят от сложности проекта. Лендинг обычно создаётся за 1-2 недели, корпоративный сайт - за 3-4 недели, интернет-магазин - за 4-6 недель. Мы всегда согласовываем сроки с клиентом и соблюдаем их.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Можно ли изменить дизайн после запуска?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, конечно! Мы предоставляем возможность внесения изменений в дизайн. Также можно заказать годовую поддержку, которая включает обновления и доработки сайта.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Будет ли сайт работать на мобильных устройствах?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Все наши сайты полностью адаптивны и отлично работают на всех устройствах: компьютерах, планшетах и смартфонах. Это стандартная функция всех наших проектов.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Нужна ли мне система управления (CMS)?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CMS позволяет вам самостоятельно обновлять контент сайта без помощи программиста. Если вы планируете регулярно добавлять новости, товары или обновлять информацию, CMS будет очень полезной.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Что входит в стоимость разработки?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В стоимость входит: дизайн, верстка, программирование, настройка, тестирование и запуск сайта. Дополнительно можно заказать SEO-оптимизацию, контент, хостинг и поддержку.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-in">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы хостинг?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы можем помочь с выбором и настройкой хостинга, а также предоставить рекомендации по лучшим провайдерам. Также можем взять на себя техническую поддержку хостинга.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блог -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Наш Блог</h2>
+            <p class="section-subtitle">Полезные статьи и новости из мира веб-разработки</p>
+            <div class="blog-grid">
+                <article class="blog-card animate-slide-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">📱</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">15 Марта 2024</div>
+                        <h3>Тренды веб-дизайна в 2024 году</h3>
+                        <p>Обзор основных трендов в веб-дизайне, которые будут актуальны в этом году. От минимализма до интерактивных элементов.</p>
+                        <a href="#" class="blog-link" data-article="1">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="blog-card animate-slide-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">⚡</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">10 Марта 2024</div>
+                        <h3>Как ускорить загрузку сайта</h3>
+                        <p>Практические советы по оптимизации скорости загрузки веб-сайта. Влияние скорости на конверсию и SEO.</p>
+                        <a href="#" class="blog-link" data-article="2">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="blog-card animate-slide-up">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">🔍</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">5 Марта 2024</div>
+                        <h3>SEO-оптимизация: с чего начать</h3>
+                        <p>Базовые принципы SEO-оптимизации для начинающих. Как улучшить видимость сайта в поисковых системах.</p>
+                        <a href="#" class="blog-link" data-article="3">Читать далее →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Свяжитесь с Нами</h2>
+            <p class="section-subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info animate-slide-left">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@itdev.ru</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Телефон</h3>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Адрес</h3>
+                        <p>Москва, ул. Примерная, д. 1</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Режим работы</h3>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-slide-right" id="contactForm" action="send.php" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="name">Ваше Имя *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="estimatedPrice">Примерная стоимость (из калькулятора)</label>
+                        <input type="text" id="estimatedPrice" name="estimatedPrice" readonly>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>Отправить</span>
+                        <div class="button-loader"></div>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-text">ITDEV</div>
+                        <div class="logo-line"></div>
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 30" width="40" height="30">
+                                <line x1="20" y1="0" x2="20" y2="15" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="15" x2="5" y2="25" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="15" x2="20" y2="25" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="15" x2="35" y2="25" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="5" cy="25" r="3" fill="currentColor"/>
+                                <circle cx="20" cy="25" r="3" fill="currentColor"/>
+                                <circle cx="35" cy="25" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/79894750042" target="_blank" class="social-link whatsapp" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/IT1_DEV" target="_blank" class="social-link telegram" title="Telegram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+                <p>&copy; 2024 ITDEV. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTop" class="scroll-to-top" title="Наверх">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Модальное окно для статей блога -->
+    <div id="blogModal" class="blog-modal">
+        <div class="blog-modal-overlay"></div>
+        <div class="blog-modal-content">
+            <button class="blog-modal-close" id="blogModalClose">×</button>
+            <div class="blog-modal-body" id="blogModalBody">
+                <!-- Контент статьи будет загружен сюда -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Онлайн чат -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-button" id="chatButton">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+            </svg>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>Онлайн консультация</h3>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <p>Здравствуйте! Чем могу помочь?</p>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Введите ваше сообщение..." />
+                <button id="chatSend">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
